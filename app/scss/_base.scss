@@ -50,12 +50,59 @@ button {
     }
 }
 
+.g-recaptcha {
+    @media (max-width: "370px") {
+        transform: scale(0.9);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: "355px") {
+        transform: scale(0.85);
+        margin-left: -20px !important;
+    }
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid $border-color;
+            border-radius: 0.25em;
+            margin-right: 12px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+    }
+
+    &:checked+label::before {
+        border-color: $secondary-color;
+        background-color: $secondary-color;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+}
+
 .section {
     background: url("../img/background.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
     padding-top: 328px;
+    margin-bottom: 48px;
 
     &__title {
         font-family: Russo One;
@@ -131,11 +178,19 @@ a.btn {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 9px 0;
+        padding: 5px 0;
 
         &__buttons {
-            a:first-child {
+            display: flex;
+            align-items: center;
+
+            button:first-child {
                 margin-right: 40px;
+            }
+
+            button {
+                background: transparent;
+                color: $text-gray;
             }
         }
 
@@ -164,6 +219,13 @@ a.btn {
 
         &__menu {
             display: none;
+
+            button {
+                background: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         &__logo {
@@ -258,6 +320,42 @@ a.btn {
     .section {
         padding-top: 120px;
         background-size: 120%;
+    }
+
+    .header {
+        &-top {
+            display: none;
+        }
+
+        &-bottom {
+            &__container {
+                justify-content: space-between;
+            }
+
+            &__menu {
+                display: block;
+            }
+
+            &__logo {
+                margin-right: 0;
+                width: 205px;
+                margin: 0 25px;
+            }
+
+            &__cart {
+                &-btn {
+                    padding: 4px 8px;
+
+                    span {
+                        display: none;
+                    }
+
+                    img {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
     }
 
     .search {
