@@ -1,0 +1,123 @@
+@import "./variables.scss";
+
+.cart {
+    margin-bottom: 48px;
+
+    &-table {
+        width: 100%;
+
+        &__image {
+            width: 105px;
+
+            img {
+                border-radius: 5px;
+                width: 100%;
+            }
+        }
+
+        &__info {
+            h4 {
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        &__count {
+            input {
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                width: 66px;
+                padding: 5px 14px;
+            }
+        }
+
+        &__sum {
+            font-weight: bold;
+        }
+
+        &__remove.btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            width: 35px;
+            height: 26px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+        }
+
+        tbody {
+            border: 1px solid $border-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+        }
+    }
+
+    &-result {
+        margin-top: 48px;
+        border: 1px solid $border-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 33px 24px;
+        text-align: center;
+
+        &__title {
+            font-family: Russo One;
+            font-size: 20px;
+            line-height: 24px;
+            color: $text-red;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        &__count,
+        &__sum {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        &__count {
+            margin-bottom: 24px;
+        }
+
+        &__sum {
+            margin-bottom: 8px;
+        }
+
+        &__number {
+            font-family: Russo One;
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        &__caption {
+            font-size: 13px;
+            margin-bottom: 26px;
+        }
+
+        &__actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .btn {
+                font-size: 13px;
+
+                &:first-child {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+}
