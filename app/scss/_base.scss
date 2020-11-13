@@ -137,6 +137,14 @@ button {
         background: #fff;
         color: $text-blue-dark;
         border: 2px solid $btn-primary;
+
+        &:hover {
+            background: $btn-primary-outline-hover;
+        }
+
+        &:active {
+            background: $btn-primary-outline-active;
+        }
     }
 
     &.btn-secondary {
@@ -184,11 +192,17 @@ a.btn {
             display: flex;
             align-items: center;
 
-            button:first-child {
+            a {
+                cursor: pointer;
+            }
+
+            button:first-child,
+            a:first-child {
                 margin-right: 40px;
             }
 
-            button {
+            button,
+            a {
                 background: transparent;
                 color: $text-gray;
             }
@@ -246,6 +260,52 @@ a.btn {
                 img {
                     margin-left: 6px;
                 }
+            }
+        }
+    }
+
+    &-menu {
+        display: none;
+        text-align: center;
+        font-size: 18px;
+
+        &.show {
+            display: block;
+        }
+
+        &__list {
+            padding: 8px 0;
+
+            li {
+                padding: 4px 0;
+
+                &:hover {
+                    background-color: darken(#fff, 3%);
+                }
+
+                a {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+
+            &.list-uppercase {
+                text-transform: uppercase;
+            }
+        }
+
+        &__tel {
+            background: #e0e0e0;
+            padding: 8px 0;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img {
+                margin-left: 14px;
             }
         }
     }
@@ -323,11 +383,15 @@ a.btn {
     }
 
     .header {
+        box-shadow: none;
+
         &-top {
             display: none;
         }
 
         &-bottom {
+            padding: 14px 0;
+
             &__container {
                 justify-content: space-between;
             }

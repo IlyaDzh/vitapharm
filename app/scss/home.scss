@@ -33,8 +33,16 @@
                 border-radius: 5px;
                 margin-bottom: 32px;
 
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+
                 img {
-                    width: 100%;
+                    height: auto;
+                    max-width: 100%;
                 }
 
                 @media (max-width: $md-width) {

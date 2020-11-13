@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/cart.css">
     <script src="js/modal.js"></script>
+    <script src="js/menu.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
@@ -19,7 +20,9 @@
         <nav class="container header-top">
             <div class="header-top__buttons">
                 <button onclick="openModal('sign-up-modal')">Регистрация</button>
+                <!-- <a onclick="openModal('sign-up-modal')">Регистрация</a> -->
                 <button onclick="openModal('sign-in-modal')">Вход</button>
+                <!-- <a onclick="openModal('sign-in-modal')">Вход</a> -->
             </div>
             <div class="header-top__tel">
                 <a href="tel:6613565">661-35-65
@@ -30,7 +33,7 @@
         <div class="header-bottom">
             <div class="container header-bottom__container">
                 <div class="header-bottom__menu">
-                    <button>
+                    <button id="mobile-menu-btn">
                         <img src="img/icons/menu.png" alt="">
                     </button>
                 </div>
@@ -46,6 +49,32 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="header-menu" id="mobile-menu">
+            <ul class="header-menu__list">
+                <li>
+                    <a onclick="openModal('sign-up-modal')">Регистрация</a>
+                </li>
+                <li>
+                    <a onclick="openModal('sign-in-modal')">Вход</a>
+                </li>
+            </ul>
+            <div class="header-menu__tel">
+                <a href="tel:6613565">661-35-65
+                    <img src="img/icons/phone-mobile.svg" alt="">
+                </a>
+            </div>
+            <ul class="header-menu__list list-uppercase">
+                <li>
+                    <a href="#">Аптеки</a>
+                </li>
+                <li>
+                    <a href="#">Акции</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+            </ul>
         </div>
     </header>
 
