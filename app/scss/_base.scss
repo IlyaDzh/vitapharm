@@ -365,6 +365,10 @@ a.btn {
 @media (max-width: $md-width) {
     .section {
         padding-top: 180px;
+
+        &__title {
+            font-size: 24px;
+        }
     }
 
     .search {
@@ -380,6 +384,10 @@ a.btn {
     .section {
         padding-top: 120px;
         background-size: 120%;
+
+        &__title {
+            font-size: 20px;
+        }
     }
 
     .header {

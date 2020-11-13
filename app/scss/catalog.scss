@@ -1,0 +1,130 @@
+@import "./variables.scss";
+
+.catalog {
+    .breadcrumbs {
+        border: 1px solid $border-color;
+        padding: 7px 32px;
+        margin-bottom: 32px;
+
+        &-list {
+            display: flex;
+            font-size: 14px;
+
+            li {
+                &:after {
+                    padding: 0 6px;
+                    color: $text-gray;
+                    content: "/\00a0";
+                }
+
+                &:last-child {
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+
+            @media (max-width: $sm-width) {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: $sm-width) {
+            padding: 4px 24px;
+        }
+    }
+
+    &-search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        height: 50px;
+        border-radius: 5px;
+
+        &__input {
+            border: 1px solid $border-color;
+            height: 100%;
+            max-width: 350px;
+            width: 100%;
+            padding: 10px 18px;
+            border-radius: 5px 0 0 5px;
+        }
+
+        &__button.btn {
+            height: 100%;
+            border-radius: 0 5px 5px 0;
+            padding: 7px 18px;
+        }
+    }
+
+    &-list {
+        margin-bottom: 80px;
+
+        .product {
+            border: 1px solid $border-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding: 16px;
+            text-align: center;
+            margin-bottom: 32px;
+
+            &__image {
+                overflow: hidden;
+                border-radius: 5px;
+                margin-bottom: 12px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__title {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 4px;
+                color: $text-green;
+            }
+
+            &__description {
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
+
+            &__cost {
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
+
+            &__btn.btn {
+                font-size: 13px;
+                padding: 4px 16px;
+            }
+        }
+    }
+
+    &-pagination {
+        display: flex;
+
+        &__list {
+            margin: 0 auto;
+            display: flex;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .page-item {
+            background: $primary-color;
+
+            &.active {
+                background: $tertiary-color;
+            }
+        }
+
+        .page-link {
+            display: block;
+            color: #fff;
+            padding: 6px 14px;
+        }
+    }
+}
