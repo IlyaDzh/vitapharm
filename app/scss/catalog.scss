@@ -79,7 +79,8 @@
             }
 
             &__title {
-                font-size: 16px;
+                display: block;
+                font-size: 18px;
                 font-weight: 400;
                 margin-bottom: 4px;
                 color: $text-green;
