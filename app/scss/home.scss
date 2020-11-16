@@ -16,41 +16,30 @@
         }
 
         &__list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 100%;
-
             .offer__item {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 height: 340px;
-                width: 32%;
-                padding: 24px;
                 border: 1px solid $border-color;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 5px;
                 margin-bottom: 32px;
 
-                &>div {
+                &-img {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 100%;
+
+                    img {
+                        height: auto;
+                        max-width: 100%;
+                    }
                 }
 
-                img {
-                    height: auto;
-                    max-width: 100%;
-                }
-
-                @media (max-width: $md-width) {
-                    width: 48%;
-                }
-
-                @media (max-width: $sm-width) {
-                    width: 100%;
+                &-btn {
+                    padding: 24px;
                 }
             }
         }
@@ -58,6 +47,7 @@
 
     &-news {
         border: 1px solid $border-color;
+        background: #fff;
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
