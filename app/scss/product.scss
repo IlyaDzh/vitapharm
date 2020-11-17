@@ -3,6 +3,7 @@
 .product {
     &-images {
         display: flex;
+        justify-content: space-between;
 
         &__large {
             max-width: 445px;
@@ -13,6 +14,17 @@
             &>div {
                 width: 65px;
                 margin-bottom: 20px;
+                cursor: pointer;
+                outline: 1px solid transparent;
+                transition: outline 0.1s ease;
+
+                &.active {
+                    outline-color: $tertiary-color;
+                }
+
+                &:hover {
+                    outline-color: $tertiary-color;
+                }
             }
         }
 
