@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Витафарм Аптека - Категории</title>
+    <title>Витафарм Аптека - История заказов</title>
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/account.css">
     <script src="js/modal.js"></script>
     <script src="js/menu.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -78,7 +78,7 @@
         </div>
     </header>
 
-    <section class="section catalog">
+    <section class="section account history">
         <div class="container">
             <div class="search">
                 <div class="search__input">
@@ -89,213 +89,271 @@
                     Найти товар
                 </button>
             </div>
-            <h1 class="section__title">Каталог товаров</h1>
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs-list">
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>Категория</li>
-                </ul>
+            <h1 class="section__title">Личный кабинет</h1>
+            <div class="account__tabs">
+                <a href="personal.html" class="btn btn-primary-outline">Персональные данные</a>
+                <a href="history.html" class="btn btn-tertiary">История заказов</a>
+                <a href="discount.html" class="btn btn-primary-outline">Программа лояльности</a>
             </div>
-            <div class="catalog-search">
-                <input type="text" class="catalog-search__input">
-                <button class="btn btn-primary catalog-search__button">
-                    <img src="img/icons/search-white.svg" alt="">
-                </button>
-            </div>
-            <div class="catalog-list">
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="history-list">
+                <div class="history-item">
+                    <div class="history-item__header">
+                        <h3 class="item__title">Заказ № 12345-12345</h3>
+                        <div>
+                            <p class="item__price">12 345.00 руб.</p>
+                            <p class="item__date">12.04.2020</p>
+                            <p class="item__status green">Выполнен</p>
+                            <button class="btn btn-primary btn-sm item__repeat-btn">Повторить заказ</button>
+                        </div>
+                    </div>
+                    <div class="history-item__list">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="product">
                             <div class="product__image">
-                                <a href="catalog.html">
+                                <a href="product.html">
                                     <img src="img/product/product.jpg" alt="">
                                 </a>
                             </div>
-                            <a href="catalog.html" class="product__title">Название категории</a>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
                         </div>
                     </div>
+                </div>
 
-                    <!-- <div class="catalog-pagination">
-                        <ul class="catalog-pagination__list">
-                            <li class="page-item">
-                                <a class="page-link" href="#1">1</a>
-                            </li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#2">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#3">3</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#4">4</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#5">5</a>
-                            </li>
-                        </ul>
-                    </div> -->
+                <div class="history-item">
+                    <div class="history-item__header">
+                        <h3 class="item__title">Заказ № 12345-12345</h3>
+                        <div>
+                            <p class="item__price">12 345.00 руб.</p>
+                            <p class="item__date">12.04.2020</p>
+                            <p class="item__status yellow">Бронь</p>
+                            <button class="btn btn-primary btn-sm item__repeat-btn">Повторить заказ</button>
+                        </div>
+                    </div>
+                    <div class="history-item__list">
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-item__header">
+                        <h3 class="item__title">Заказ № 12345-12345</h3>
+                        <div>
+                            <p class="item__price">12 345.00 руб.</p>
+                            <p class="item__date">12.04.2020</p>
+                            <p class="item__status red">Отменен</p>
+                            <button class="btn btn-primary btn-sm item__repeat-btn">Повторить заказ</button>
+                        </div>
+                    </div>
+                    <div class="history-item__list">
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                        <div class="product">
+                            <div class="product__image">
+                                <a href="product.html">
+                                    <img src="img/product/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="product.html" class="product__title">Lorem Ipsum</a>
+                            <h6 class="product__price">890 руб.</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h1 class="section__title">Рекомендованные товары</h1>
-            <div class="catalog-list">
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="product">
-                            <div class="product__image">
-                                <a href="product.html">
-                                    <img src="img/product/product.jpg" alt="">
-                                </a>
-                            </div>
-                            <a href="product.html" class="product__title">Lorem Ipsum</a>
-                            <div>
-                                <h4 class="product__cost">180 руб.</h4>
-                                <a href="#" class="btn btn-primary btn-sm btn-fullwidth product__btn">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="product">
-                            <div class="product__image">
-                                <a href="product.html">
-                                    <img src="img/product/product.jpg" alt="">
-                                </a>
-                            </div>
-                            <a href="product.html" class="product__title">Lorem Ipsum</a>
-                            <div>
-                                <h4 class="product__cost">180 руб.</h4>
-                                <a href="#" class="btn btn-primary btn-sm btn-fullwidth product__btn">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="product">
-                            <div class="product__image">
-                                <a href="product.html">
-                                    <img src="img/product/product.jpg" alt="">
-                                </a>
-                            </div>
-                            <a href="product.html" class="product__title">Lorem Ipsum</a>
-                            <div>
-                                <h4 class="product__cost">180 руб.</h4>
-                                <a href="#" class="btn btn-primary btn-sm btn-fullwidth product__btn">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="product">
-                            <div class="product__image">
-                                <a href="product.html">
-                                    <img src="img/product/product.jpg" alt="">
-                                </a>
-                            </div>
-                            <a href="product.html" class="product__title">Lorem Ipsum</a>
-                            <div>
-                                <h4 class="product__cost">180 руб.</h4>
-                                <a href="#" class="btn btn-primary btn-sm btn-fullwidth product__btn">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="product">
-                            <div class="product__image">
-                                <a href="product.html">
-                                    <img src="img/product/product.jpg" alt="">
-                                </a>
-                            </div>
-                            <a href="product.html" class="product__title">Lorem Ipsum</a>
-                            <div>
-                                <h4 class="product__cost">180 руб.</h4>
-                                <a href="#" class="btn btn-primary btn-sm btn-fullwidth product__btn">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="product">
-                            <div class="product__image">
-                                <a href="product.html">
-                                    <img src="img/product/product.jpg" alt="">
-                                </a>
-                            </div>
-                            <a href="product.html" class="product__title">Lorem Ipsum</a>
-                            <div>
-                                <h4 class="product__cost">180 руб.</h4>
-                                <a href="#" class="btn btn-primary btn-sm btn-fullwidth product__btn">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="pagination">
+                <ul class="pagination__list">
+                    <li class="page-item">
+                        <a class="page-link" href="#1">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#2">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#3">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#4">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#5">5</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -350,7 +408,7 @@
                     <label for="checkbox3">Я даю согласие на получение e-mail-рассылки</label>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LfuUuIZAAAAAOYAr4EkPFgQiMuuHoCRfRwuKzui"></div>
-                <button class="btn btn-primary btn-sm btn-fullwidth product__btn modal-form__btn" type="submit">
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
                     Зарегистироваться
                 </button>
                 <a href="#" class="modal-form__link">У меня уже есть аккаунт</a>
@@ -377,7 +435,7 @@
                 </div>
                 <a href="#" class="modal-form__link link-pass">Забыли пароль?</a>
                 <div class="g-recaptcha" data-sitekey="6LfuUuIZAAAAAOYAr4EkPFgQiMuuHoCRfRwuKzui"></div>
-                <button class="btn btn-primary btn-sm btn-fullwidth product__btn modal-form__btn" type="submit">
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
                     Войти
                 </button>
                 <a href="#" class="modal-form__link">У меня нет аккаунта</a>

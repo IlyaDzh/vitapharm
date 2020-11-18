@@ -103,29 +103,4 @@
             }
         }
     }
-
-    &-pagination {
-        display: flex;
-
-        &__list {
-            margin: 0 auto;
-            display: flex;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-
-        .page-item {
-            background: $primary-color;
-
-            &.active {
-                background: $tertiary-color;
-            }
-        }
-
-        .page-link {
-            display: block;
-            color: #fff;
-            padding: 6px 14px;
-        }
-    }
 }

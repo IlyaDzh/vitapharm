@@ -107,6 +107,7 @@ button {
     &__title {
         font-family: Russo One;
         font-size: 32px;
+        font-weight: 400;
         text-transform: uppercase;
         color: $text-red;
         text-align: center;
@@ -115,7 +116,7 @@ button {
 }
 
 .btn {
-    padding: 12px 36px;
+    padding: 10px 36px;
     font-size: 20px;
     border-radius: 5px;
     color: #fff;
@@ -156,6 +157,20 @@ button {
 
         &:active {
             background: $btn-secondary-active;
+        }
+    }
+
+    &.btn-tertiary {
+        background: $btn-tertiary;
+        border: 2px solid $btn-tertiary;
+        color: #fff;
+
+        &:hover {
+            background: $btn-tertiary-hover;
+        }
+
+        &:active {
+            background: $btn-tertiary-active;
         }
     }
 
@@ -254,7 +269,7 @@ a.btn {
             &-btn {
                 display: flex;
                 align-items: center;
-                padding: 12px 24px;
+                padding: 8px 24px;
                 text-transform: uppercase;
 
                 img {
@@ -342,8 +357,35 @@ a.btn {
 
     &__btn {
         min-width: 180px;
-        line-height: 26px;
-        height: 50px;
+    }
+}
+
+.pagination {
+    display: flex;
+
+    &__list {
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .page-item {
+        background: $primary-color;
+
+        &.active {
+            background: $tertiary-color;
+        }
+
+        &:hover:not(.active) {
+            background: $btn-primary-hover;
+        }
+    }
+
+    .page-link {
+        display: block;
+        color: #fff;
+        padding: 6px 14px;
     }
 }
 

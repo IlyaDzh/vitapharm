@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Витафарм Аптека - Корзина</title>
+    <title>Витафарм Аптека - Персональные данные</title>
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/account.css">
     <script src="js/modal.js"></script>
     <script src="js/menu.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -78,7 +78,7 @@
         </div>
     </header>
 
-    <section class="section cart">
+    <section class="section account personal">
         <div class="container">
             <div class="search">
                 <div class="search__input">
@@ -89,85 +89,119 @@
                     Найти товар
                 </button>
             </div>
-            <h1 class="section__title">Товары в корзине</h1>
-            <div class="row">
-                <div class="col-md-12 col-lg-8">
-                    <table class="cart-table">
-                        <thead>
-                            <tr>
-                                <th>Изображение</th>
-                                <th>Наименование</th>
-                                <th>Цена</th>
-                                <th>Количество</th>
-                                <th>Сумма</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="cart-table__image">
-                                    <a href="product.html">
-                                        <img src="img/product/product.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td class="cart-table__info">
-                                    <a href="product.html">Lorem ipsum</a>
-                                </td>
-                                <td>180 руб.</td>
-                                <td class="cart-table__count">
-                                    <input type="number" value="1">
-                                </td>
-                                <td class="cart-table__sum">180 руб.</td>
-                                <td>
-                                    <button class="btn btn-secondary btn-sm cart-table__remove">
-                                        <img src="img/icons/trash.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="cart-table__image">
-                                    <a href="product.html">
-                                        <img src="img/product/product.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td class="cart-table__info">
-                                    <a href="product.html">Lorem ipsum</a>
-                                </td>
-                                <td>180 руб.</td>
-                                <td class="cart-table__count">
-                                    <input type="number" value="1">
-                                </td>
-                                <td class="cart-table__sum">180 руб.</td>
-                                <td>
-                                    <button class="btn btn-secondary btn-sm cart-table__remove">
-                                        <img src="img/icons/trash.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="cart-result">
-                        <h3 class="cart-result__title">Ваш заказ</h3>
-                        <p class="cart-result__count">В корзине Х товаров</p>
-                        <p class="cart-result__sum">Сумма заказа:</p>
-                        <h1 class="cart-result__number">ХХХХ руб.</h1>
-                        <p class="cart-result__caption">
-                            Данное значение является предварительным. Точная сумма будет озвучена при покупке на кассе.
-                        </p>
-                        <div class="cart-result__actions">
-                            <button class="btn btn-primary btn-sm btn-fullwidth">
-                                Выбрать аптеку
-                            </button>
-                            <button class="btn btn-primary btn-sm btn-fullwidth">
-                                Списать баллы
-                            </button>
+            <h1 class="section__title">Личный кабинет</h1>
+            <div class="account__tabs">
+                <a href="personal.html" class="btn btn-tertiary">Персональные данные</a>
+                <a href="history.html" class="btn btn-primary-outline">История заказов</a>
+                <a href="discount.html" class="btn btn-primary-outline">Программа лояльности</a>
+            </div>
+            <form class="personal-form">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="personal-form__inputbox">
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email">
                         </div>
-                        <button class="btn btn-primary-outline">Оформить заказ</button>
+                        <div class="personal-form__inputbox">
+                            <label for="number">Телефон</label>
+                            <input type="text" name="number">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="personal-form__inputbox">
+                            <label for="firstname">Имя</label>
+                            <input type="text" name="firstname">
+                        </div>
+                        <div class="personal-form__inputbox">
+                            <label for="lastname">Фамилия</label>
+                            <input type="text" name="lastname">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="personal-form__inputbox">
+                            <label>Дата рождения</label>
+                            <div class="personal-form__inputbox-row">
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                                <select>
+                                    <option>Январь</option>
+                                    <option>Февраль</option>
+                                    <option>Март</option>
+                                    <option>Апрель</option>
+                                    <option>Май</option>
+                                    <option>Июнь</option>
+                                    <option>Июль</option>
+                                    <option>Август</option>
+                                    <option>Сентябрь</option>
+                                    <option>Октябрь</option>
+                                    <option>Ноябрь</option>
+                                    <option>Декабрь</option>
+                                </select>
+                                <select>
+                                    <option>1991</option>
+                                    <option>19**</option>
+                                    <option>19**</option>
+                                    <option>19**</option>
+                                    <option>19**</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="personal-form__checkbox">
+                            <input type="checkbox" id="checkbox4" class="checkbox">
+                            <label for="checkbox4">Я даю согласие на сбор и обработку персональных данных *</label>
+                        </div>
+                        <div class="personal-form__checkbox">
+                            <input type="checkbox" id="checkbox5" class="checkbox">
+                            <label for="checkbox5">Я даю согласие на получение SMS-рассылки</label>
+                        </div>
+                        <div class="personal-form__checkbox">
+                            <input type="checkbox" id="checkbox6" class="checkbox">
+                            <label for="checkbox6">Я даю согласие на получение e-mail-рассылки</label>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-sm btn-fullwidth personal-form__change" type="button">
+                            Сменить пароль
+                        </button>
+                        <button class="btn btn-primary-outline personal-form__save" type="submit">
+                            Сохранить изменения
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
