@@ -104,6 +104,11 @@ button {
     padding-top: 328px;
     margin-bottom: 48px;
 
+    &-gradient {
+        background: url("../img/background-gradient.png");
+        padding-top: 40px;
+    }
+
     &__title {
         font-family: Russo One;
         font-size: 32px;
