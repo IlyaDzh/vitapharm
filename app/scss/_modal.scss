@@ -73,6 +73,12 @@ html.modal-open {
             margin: 23px 0 12px;
         }
 
+        &__error {
+            text-align: center;
+            color: $text-red;
+            margin-bottom: 8px;
+        }
+
         &__btn {
             padding: 4px 16px;
             margin-bottom: 12px;
