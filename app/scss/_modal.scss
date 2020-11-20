@@ -87,11 +87,16 @@ html.modal-open {
         &__link {
             display: block;
             text-align: center;
-            text-decoration: underline;
+            text-decoration: underline !important;
+            cursor: pointer !important;
 
             &.link-pass {
                 margin: 16px 0 -7px 0;
-                color: $text-blue-dark;
+                color: $text-blue-dark !important;
+            }
+
+            &:hover {
+                text-decoration: none !important;
             }
         }
     }

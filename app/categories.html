@@ -354,7 +354,9 @@
                 <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
                     Зарегистироваться
                 </button>
-                <a href="#" class="modal-form__link">У меня уже есть аккаунт</a>
+                <a class="modal-form__link" onclick="closeModal('sign-up-modal'); openModal('sign-in-modal')">
+                    У меня уже есть аккаунт
+                </a>
             </form>
         </div>
     </div>
@@ -376,13 +378,15 @@
                     <label for="password">Пароль</label>
                     <input type="password" name="password">
                 </div>
-                <a href="#" class="modal-form__link link-pass">Забыли пароль?</a>
+                <a class="modal-form__link link-pass">Забыли пароль?</a>
                 <div class="g-recaptcha" data-sitekey="6LfuUuIZAAAAAOYAr4EkPFgQiMuuHoCRfRwuKzui"></div>
                 <p class="modal-form__error">Неверный логин или пароль</p>
                 <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
                     Войти
                 </button>
-                <a href="#" class="modal-form__link">У меня нет аккаунта</a>
+                <a class="modal-form__link" onclick="closeModal('sign-in-modal'); openModal('sign-up-modal')">
+                    У меня нет аккаунта
+                </a>
             </form>
         </div>
     </div>
