@@ -106,7 +106,9 @@ button {
 
     &-gradient {
         background: url("../img/background-gradient.png");
-        padding-top: 40px;
+        padding-top: 40px !important;
+        background-repeat: no-repeat !important;
+        background-size: auto !important;
     }
 
     &__title {

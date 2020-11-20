@@ -56,20 +56,6 @@
                     font-size: 16px;
                     height: 40px;
                 }
-
-                &-row {
-                    display: flex;
-                    align-items: center;
-
-                    input,
-                    select {
-                        margin-right: 16px;
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                    }
-                }
             }
 
             &__checkbox {
