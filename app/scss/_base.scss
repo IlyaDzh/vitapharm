@@ -396,6 +396,40 @@ a.btn {
     }
 }
 
+.breadcrumbs {
+    border: 1px solid $border-color;
+    background-color: #fff;
+    padding: 7px 32px;
+    margin-bottom: 32px;
+
+    &-list {
+        display: flex;
+        font-size: 14px;
+
+        li {
+            &:after {
+                padding: 0 6px;
+                color: $text-gray;
+                content: "/\00a0";
+            }
+
+            &:last-child {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+
+        @media (max-width: $sm-width) {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: $sm-width) {
+        padding: 4px 24px;
+    }
+}
+
 @media (max-width: $lg-width) {
     .section {
         padding-top: 240px;
