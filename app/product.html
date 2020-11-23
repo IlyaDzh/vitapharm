@@ -262,7 +262,7 @@
                     <label for="password">Пароль</label>
                     <input type="password" name="password">
                 </div>
-                <a class="modal-form__link link-pass">Забыли пароль?</a>
+                <a class="modal-form__link link-pass" onclick="openModal('recovery-password-modal')">Забыли пароль?</a>
                 <div class="g-recaptcha" data-sitekey="6LfuUuIZAAAAAOYAr4EkPFgQiMuuHoCRfRwuKzui"></div>
                 <p class="modal-form__error">Неверный логин или пароль</p>
                 <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
@@ -272,6 +272,40 @@
                     У меня нет аккаунта
                 </a>
             </form>
+        </div>
+    </div>
+
+    <div class="modal" id="recovery-password-modal">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <h3 class="modal__title">Восстановление пароля</h3>
+                <button class="modal__close" onclick="closeModal('recovery-password-modal', false)">
+                    <img src="img/icons/close.png" alt="">
+                </button>
+            </div>
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-form__inputbox">
+                    <label for="email">Введите e-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <p class="modal-form__error">Неверный e-mail</p>
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="button"
+                    onclick="openModal('email-modal')">
+                    Восстановить
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="email-modal">
+        <div class="modal-inner">
+            <div class="modal-alert">
+                <p class="modal-alert__text">Вам на e-mail было выслано письмо со ссылкой</p>
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn"
+                    onclick="closeModal('email-modal', false)">
+                    Ок
+                </button>
+            </div>
         </div>
     </div>
 </body>

@@ -28,6 +28,15 @@ html.modal-open {
         display: block;
     }
 
+    &-alert {
+        padding: 24px;
+        background: #fff;
+
+        &__text {
+            margin-bottom: 16px;
+        }
+    }
+
     &-header {
         background: $header-bg;
         padding: 16px 24px;
