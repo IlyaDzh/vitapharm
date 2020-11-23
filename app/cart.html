@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/pharmacies.css">
     <script src="js/modal.js"></script>
     <script src="js/menu.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -157,7 +158,8 @@
                             Данное значение является предварительным. Точная сумма будет озвучена при покупке на кассе.
                         </p>
                         <div class="cart-result__actions">
-                            <button class="btn btn-primary btn-sm btn-fullwidth">
+                            <button class="btn btn-primary btn-sm btn-fullwidth"
+                                onclick="openModal('pharmacies-modal')">
                                 Выбрать аптеку
                             </button>
                             <button class="btn btn-primary btn-sm btn-fullwidth">
@@ -292,6 +294,125 @@
                     onclick="closeModal('email-modal', false)">
                     Ок
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="pharmacies-modal">
+        <div class="modal-inner pharmacies-modal-inner">
+            <div class="pharmacies-modal">
+                <h1 class="pharmacies-modal__title">Выберите аптеку</h1>
+                <button class="modal__close" onclick="closeModal('pharmacies-modal')">
+                    <img src="img/pharmacies/close.svg" alt="">
+                </button>
+                <form class="pharmacies-header">
+                    <div class="pharmacies-header__inputbox">
+                        <label for="">Поиск по адресу или станции метро</label>
+                        <div>
+                            <input type="text">
+                            <button type="button">
+                                <img src="img/pharmacies/search.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pharmacies-header__selectbox">
+                        <label for="area">Район</label>
+                        <select name="area">
+                            <option>Район #1</option>
+                            <option>Район #2</option>
+                            <option>Район #3</option>
+                            <option>Район #4</option>
+                        </select>
+                    </div>
+                    <div class="pharmacies-header__selectbox">
+                        <label for="metro">Станция метро</label>
+                        <select name="metro">
+                            <option>Метро #1</option>
+                            <option>Метро #2</option>
+                            <option>Метро #3</option>
+                            <option>Метро #4</option>
+                        </select>
+                    </div>
+                    <div class="pharmacies-header__selectbox">
+                        <label for="time">Режим работы</label>
+                        <select name="time">
+                            <option>09:00</option>
+                            <option>09:00</option>
+                            <option>09:00</option>
+                            <option>09:00</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary-outline pharmacies-header__reset" type="reset">Сброс</button>
+                </form>
+                <div class="pharmacies-content">
+                    <div class="pharmacies-content__map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A441af78eb36a9bbcf03e70f772c30cfa2ba5ec6ec7dd078cba873ce1444fb175&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <div class="pharmacies-content__list">
+                        <div class="list-header">
+                            <h3 class="list-header__title">Показано аптек: 5 из 120</h3>
+                        </div>
+                        <div class="list-items">
+                            <div class="item">
+                                <div>
+                                    <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                    <p class="item__time">10:00 - 21:00</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/eye.svg" alt="">
+                                    </button>
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/heart.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div>
+                                    <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                    <p class="item__time">10:00 - 21:00</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/eye.svg" alt="">
+                                    </button>
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/heart.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div>
+                                    <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                    <p class="item__time">10:00 - 21:00</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/eye.svg" alt="">
+                                    </button>
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/heart.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div>
+                                    <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                    <p class="item__time">10:00 - 21:00</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/eye.svg" alt="">
+                                    </button>
+                                    <button class="item-actions__btn">
+                                        <img src="img/pharmacies/heart.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

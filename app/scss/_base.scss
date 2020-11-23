@@ -244,7 +244,7 @@ a.btn {
     }
 
     &-bottom {
-        background-color: $header-bg;
+        background-color: $secondary-color;
         padding: 28px 0;
 
         &__container {
@@ -335,7 +335,7 @@ a.btn {
 
 .search {
     padding: 20px 32px;
-    background: $header-bg;
+    background: $secondary-color;
     display: flex;
     align-items: center;
     margin-bottom: 80px;

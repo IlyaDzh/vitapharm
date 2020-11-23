@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Витафарм Аптека - Аптеки</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pharmacies.css">
+    <script src="js/modal.js"></script>
+    <script src="js/menu.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container header-top">
+            <div class="header-top__buttons">
+                <button onclick="openModal('sign-up-modal')">Регистрация</button>
+                <!-- <a onclick="openModal('sign-up-modal')">Регистрация</a> -->
+                <button onclick="openModal('sign-in-modal')">Вход</button>
+                <!-- <a onclick="openModal('sign-in-modal')">Вход</a> -->
+            </div>
+            <div class="header-top__tel">
+                <a href="tel:6613565">661-35-65
+                    <img src="img/icons/phone.svg" alt="">
+                </a>
+            </div>
+        </nav>
+        <div class="header-bottom">
+            <div class="container header-bottom__container">
+                <div class="header-bottom__menu">
+                    <button id="mobile-menu-btn">
+                        <img src="img/icons/menu.png" alt="">
+                    </button>
+                </div>
+                <div class="header-bottom__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Vitapharm logo">
+                    </a>
+                </div>
+                <div class="header-bottom__cart">
+                    <a href="cart.html" class="btn btn-primary-outline header-bottom__cart-btn">
+                        <span>Корзина</span>
+                        <img src="img/icons/cart.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu" id="mobile-menu">
+            <ul class="header-menu__list">
+                <li>
+                    <a onclick="openModal('sign-up-modal')">Регистрация</a>
+                </li>
+                <li>
+                    <a onclick="openModal('sign-in-modal')">Вход</a>
+                </li>
+            </ul>
+            <div class="header-menu__tel">
+                <a href="tel:6613565">661-35-65
+                    <img src="img/icons/phone-mobile.svg" alt="">
+                </a>
+            </div>
+            <ul class="header-menu__list list-uppercase">
+                <li>
+                    <a href="#">Аптеки</a>
+                </li>
+                <li>
+                    <a href="#">Акции</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section pharmacies">
+        <div class="container">
+            <div class="search">
+                <div class="search__input">
+                    <input type="text" placeholder="Поиск лекарств с доставкой...">
+                    <img src="img/icons/search.svg" alt="">
+                </div>
+                <button class="btn btn-primary search__btn">
+                    Найти товар
+                </button>
+            </div>
+            <h1 class="section__title">Аптеки</h1>
+            <form class="pharmacies-header">
+                <div class="pharmacies-header__inputbox">
+                    <label for="">Поиск по адресу или станции метро</label>
+                    <div>
+                        <input type="text">
+                        <button type="button">
+                            <img src="img/pharmacies/search.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="pharmacies-header__selectbox">
+                    <label for="area">Район</label>
+                    <select name="area">
+                        <option>Район #1</option>
+                        <option>Район #2</option>
+                        <option>Район #3</option>
+                        <option>Район #4</option>
+                    </select>
+                </div>
+                <div class="pharmacies-header__selectbox">
+                    <label for="metro">Станция метро</label>
+                    <select name="metro">
+                        <option>Метро #1</option>
+                        <option>Метро #2</option>
+                        <option>Метро #3</option>
+                        <option>Метро #4</option>
+                    </select>
+                </div>
+                <div class="pharmacies-header__selectbox">
+                    <label for="time">Режим работы</label>
+                    <select name="time">
+                        <option>09:00</option>
+                        <option>09:00</option>
+                        <option>09:00</option>
+                        <option>09:00</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary-outline pharmacies-header__reset" type="reset">Сброс фильтров</button>
+            </form>
+            <div class="pharmacies-content">
+                <div class="pharmacies-content__map">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A441af78eb36a9bbcf03e70f772c30cfa2ba5ec6ec7dd078cba873ce1444fb175&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="pharmacies-content__list">
+                    <div class="list-header">
+                        <h3 class="list-header__title">Показано аптек: 15 из 120</h3>
+                    </div>
+                    <div class="list-items">
+                        <div class="item">
+                            <div>
+                                <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                <p class="item__time">10:00 - 21:00</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/eye.svg" alt="">
+                                </button>
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/heart.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                <p class="item__time">10:00 - 21:00</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/eye.svg" alt="">
+                                </button>
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/heart.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                <p class="item__time">10:00 - 21:00</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/eye.svg" alt="">
+                                </button>
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/heart.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h6 class="item__name">Lorem ipsum, ул. Lorem Ipsum, XXX/XX</h6>
+                                <p class="item__time">10:00 - 21:00</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/eye.svg" alt="">
+                                </button>
+                                <button class="item-actions__btn">
+                                    <img src="img/pharmacies/heart.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="sign-up-modal">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <h3 class="modal__title">Регистрация</h3>
+                <button class="modal__close" onclick="closeModal('sign-up-modal')">
+                    <img src="img/icons/close.png" alt="">
+                </button>
+            </div>
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-form__inputbox">
+                    <label for="email">Email *</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" name="phone" placeholder="+7(999)-999-99-99">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="firstName">Имя *</label>
+                    <input type="text" name="firstName">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="lastName">Фамилия *</label>
+                    <input type="text" name="lastName">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="dateOfBirth">Дата рождения</label>
+                    <input type="date" name="dateOfBirth" placeholder="ДД.ММ.ГГГГ">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="password">Введите пароль *</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="password2">Повторите пароль *</label>
+                    <input type="password" name="password2">
+                </div>
+                <div class="modal-form__checkbox">
+                    <input type="checkbox" id="checkbox1" class="checkbox">
+                    <label for="checkbox1">Я даю согласие на сбор и обработку персональных данных *</label>
+                </div>
+                <div class="modal-form__checkbox">
+                    <input type="checkbox" id="checkbox2" class="checkbox">
+                    <label for="checkbox2">Я даю согласие на получение SMS-рассылки</label>
+                </div>
+                <div class="modal-form__checkbox">
+                    <input type="checkbox" id="checkbox3" class="checkbox">
+                    <label for="checkbox3">Я даю согласие на получение e-mail-рассылки</label>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LfuUuIZAAAAAOYAr4EkPFgQiMuuHoCRfRwuKzui"></div>
+                <p class="modal-form__error">Пароли не совпадают</p>
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
+                    Зарегистироваться
+                </button>
+                <a class="modal-form__link" onclick="closeModal('sign-up-modal'); openModal('sign-in-modal')">
+                    У меня уже есть аккаунт
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="sign-in-modal">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <h3 class="modal__title">Авторизация</h3>
+                <button class="modal__close" onclick="closeModal('sign-in-modal')">
+                    <img src="img/icons/close.png" alt="">
+                </button>
+            </div>
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-form__inputbox">
+                    <label for="email">E-mail или телефон</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="modal-form__inputbox">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password">
+                </div>
+                <a class="modal-form__link link-pass" onclick="openModal('recovery-password-modal')">Забыли пароль?</a>
+                <div class="g-recaptcha" data-sitekey="6LfuUuIZAAAAAOYAr4EkPFgQiMuuHoCRfRwuKzui"></div>
+                <p class="modal-form__error">Неверный логин или пароль</p>
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="submit">
+                    Войти
+                </button>
+                <a class="modal-form__link" onclick="closeModal('sign-in-modal'); openModal('sign-up-modal')">
+                    У меня нет аккаунта
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="recovery-password-modal">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <h3 class="modal__title">Восстановление пароля</h3>
+                <button class="modal__close" onclick="closeModal('recovery-password-modal', false)">
+                    <img src="img/icons/close.png" alt="">
+                </button>
+            </div>
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-form__inputbox">
+                    <label for="email">Введите e-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <p class="modal-form__error">Неверный e-mail</p>
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn" type="button"
+                    onclick="openModal('email-modal')">
+                    Восстановить
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="email-modal">
+        <div class="modal-inner">
+            <div class="modal-alert">
+                <p class="modal-alert__text">Вам на e-mail было выслано письмо со ссылкой</p>
+                <button class="btn btn-primary btn-sm btn-fullwidth modal-form__btn"
+                    onclick="closeModal('email-modal', false)">
+                    Ок
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
