@@ -93,63 +93,66 @@
             <h1 class="section__title">Товары в корзине</h1>
             <div class="row">
                 <div class="col-md-12 col-lg-8">
-                    <table class="cart-table">
-                        <thead>
-                            <tr>
-                                <th>Изображение</th>
-                                <th>Наименование</th>
-                                <th>Цена</th>
-                                <th>Количество</th>
-                                <th>Сумма</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="cart-table__image">
-                                    <a href="product.html">
-                                        <img src="img/product/product.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td class="cart-table__info">
-                                    <a href="product.html">Lorem ipsum</a>
-                                </td>
-                                <td>180 руб.</td>
-                                <td class="cart-table__count">
-                                    <input type="number" value="1">
-                                </td>
-                                <td class="cart-table__sum">180 руб.</td>
-                                <td>
-                                    <button class="btn btn-secondary btn-sm cart-table__remove">
-                                        <img src="img/icons/trash.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="cart-table__image">
-                                    <a href="product.html">
-                                        <img src="img/product/product.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td class="cart-table__info">
-                                    <a href="product.html">Lorem ipsum</a>
-                                </td>
-                                <td>180 руб.</td>
-                                <td class="cart-table__count">
-                                    <input type="number" value="1">
-                                </td>
-                                <td class="cart-table__sum">180 руб.</td>
-                                <td>
-                                    <button class="btn btn-secondary btn-sm cart-table__remove">
-                                        <img src="img/icons/trash.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- <tr>
-                                <td colspan="6" class="cart-table__empty">В корзине пусто</td>
-                            </tr> -->
-                        </tbody>
-                    </table>
+                    <div class="cart-table-responsive">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Изображение</th>
+                                    <th>Наименование</th>
+                                    <th>Цена</th>
+                                    <th>Количество</th>
+                                    <th>Сумма</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cart-table__image">
+                                        <a href="product.html">
+                                            <img src="img/product/product.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td class="cart-table__info">
+                                        <a href="product.html">Lorem ipsum</a>
+                                    </td>
+                                    <td>180 руб.</td>
+                                    <td class="cart-table__count">
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td class="cart-table__sum">180 руб.</td>
+                                    <td>
+                                        <button class="btn btn-secondary btn-sm cart-table__remove">
+                                            <!-- <img src="img/icons/trash.svg" alt=""> -->
+                                            <div class="loader"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cart-table__image">
+                                        <a href="product.html">
+                                            <img src="img/product/product.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td class="cart-table__info">
+                                        <a href="product.html">Lorem ipsum</a>
+                                    </td>
+                                    <td>180 руб.</td>
+                                    <td class="cart-table__count">
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td class="cart-table__sum">180 руб.</td>
+                                    <td>
+                                        <button class="btn btn-secondary btn-sm cart-table__remove">
+                                            <img src="img/icons/trash.svg" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td colspan="6" class="cart-table__empty">В корзине пусто</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-4">
                     <div class="cart-result">
