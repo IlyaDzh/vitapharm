@@ -39,7 +39,10 @@
                 </div>
                 <div class="header-bottom__logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="Vitapharm logo">
+                        <picture>
+                            <source srcset="img/logo/logo.webp 1x, img/logo/logo@2x.webp 2x" type="image/webp">
+                            <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x" alt="Vitapharm logo">
+                        </picture>
                     </a>
                 </div>
                 <div class="header-bottom__cart">
@@ -127,6 +130,9 @@
                                 <div>
                                     <h3 class="product-info__cost">180 руб.</h3>
                                     <button class="btn btn-primary">В корзину</button>
+                                    <!-- <button class="btn btn-primary">
+                                        <div class="loader"></div>
+                                    </button> -->
                                 </div>
                             </div>
                         </div>
