@@ -232,15 +232,15 @@ a.btn {
                 cursor: pointer;
             }
 
-            button:first-child,
-            a:first-child {
-                margin-right: 40px;
+            a:last-child {
+                margin-right: 0;
             }
 
             button,
             a {
                 background: transparent;
                 color: $text-gray;
+                margin-right: 40px;
             }
         }
 
@@ -483,6 +483,18 @@ a.btn {
 
         input {
             font-size: 16px;
+        }
+    }
+
+    .header {
+        &-top {
+            &__buttons {
+
+                button,
+                a {
+                    margin-right: 20px;
+                }
+            }
         }
     }
 }
