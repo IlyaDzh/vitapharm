@@ -245,6 +245,9 @@ a.btn {
         }
 
         &__tel {
+            display: flex;
+            align-items: center;
+
             a {
                 font-size: 20px;
                 display: flex;
@@ -252,6 +255,10 @@ a.btn {
 
                 img {
                     margin-left: 16px;
+                }
+
+                &:last-child {
+                    margin-left: 36px;
                 }
             }
         }
@@ -467,6 +474,18 @@ a.btn {
             margin-top: 20px;
         }
     }
+
+    .header {
+        &-top {
+            &__tel {
+                a {
+                    &:last-child {
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $md-width) {
@@ -483,29 +502,6 @@ a.btn {
 
         input {
             font-size: 16px;
-        }
-    }
-
-    .header {
-        &-top {
-            &__buttons {
-
-                button,
-                a {
-                    margin-right: 20px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: $sm-width) {
-    .section {
-        padding-top: 120px;
-        background-size: 120%;
-
-        &__title {
-            font-size: 20px;
         }
     }
 
@@ -546,6 +542,17 @@ a.btn {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: $sm-width) {
+    .section {
+        padding-top: 120px;
+        background-size: 120%;
+
+        &__title {
+            font-size: 20px;
         }
     }
 
